@@ -1,0 +1,186 @@
+{
+  "incidents": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7800, 40.6450]
+      },
+      "properties": {
+        "id": "TT-EXCL-0001",
+        "iconCategory": 8,
+        "magnitudeOfDelay": 4,
+        "events": [
+          {
+            "description": "Road closed due to emergency repairs at Exit 13",
+            "code": 401,
+            "iconCategory": 8
+          }
+        ],
+        "startTime": "2026-10-16T09:15:00Z",
+        "endTime": null,
+        "from": "JFK Expressway Exit 13",
+        "to": "Northbound Van Wyck Boulevard",
+        "length": 1200.0,
+        "roadNumbers": ["I-678"],
+        "timeValidity": "present",
+        "probabilityOfOccurrence": "certain",
+        "numberOfReports": 4,
+        "lastReportTime": "2026-10-16T14:05:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7600, 40.7600]
+      },
+      "properties": {
+        "id": "TT-EXCL-0002",
+        "iconCategory": 6,
+        "magnitudeOfDelay": 3,
+        "events": [
+          {
+            "description": "Heavy traffic on the approach to the Midtown Tunnel",
+            "code": 101,
+            "iconCategory": 6
+          }
+        ],
+        "startTime": "2026-10-16T13:40:00Z",
+        "endTime": null,
+        "from": "Queens Midtown Tunnel",
+        "to": "Manhattan",
+        "length": 2400.0,
+        "delay": 900,
+        "roadNumbers": ["I-495"],
+        "timeValidity": "present",
+        "probabilityOfOccurrence": "probable",
+        "numberOfReports": 7,
+        "lastReportTime": "2026-10-16T14:02:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": []
+      },
+      "properties": {
+        "id": "TT-EXCL-0003",
+        "iconCategory": 1,
+        "magnitudeOfDelay": 2,
+        "events": [
+          {
+            "description": "Two-vehicle collision, right lane blocked",
+            "code": 201,
+            "iconCategory": 1
+          }
+        ],
+        "startTime": "2026-10-16T13:55:00Z",
+        "endTime": null,
+        "from": "Belt Parkway",
+        "to": "JFK Airport",
+        "length": 800.0,
+        "delay": 300,
+        "roadNumbers": ["NY-27"],
+        "timeValidity": "present",
+        "probabilityOfOccurrence": "certain",
+        "numberOfReports": 2,
+        "lastReportTime": "2026-10-16T14:04:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-73.7900, 40.6800],
+          [-73.7850, 40.6760]
+        ]
+      },
+      "properties": {
+        "id": "TT-EXCL-0004",
+        "iconCategory": 9,
+        "magnitudeOfDelay": 1,
+        "events": [
+          {
+            "description": "Overnight resurfacing, one lane closed",
+            "code": 701,
+            "iconCategory": 9
+          }
+        ],
+        "startTime": "2026-10-16T08:00:00Z",
+        "endTime": "2026-10-17T05:00:00Z",
+        "from": "Rockaway Boulevard",
+        "to": "Farmers Boulevard",
+        "length": 600.0,
+        "delay": 60,
+        "roadNumbers": ["NY-878"],
+        "timeValidity": "present",
+        "probabilityOfOccurrence": "certain",
+        "numberOfReports": 1,
+        "lastReportTime": "2026-10-16T12:30:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.7000, 40.7000]
+      },
+      "properties": {
+        "id": "TT-EXCL-0005",
+        "iconCategory": 3,
+        "magnitudeOfDelay": 0,
+        "events": [
+          {
+            "description": "Standing water reported on the shoulder",
+            "code": 601,
+            "iconCategory": 3
+          }
+        ],
+        "startTime": "2026-10-16T13:10:00Z",
+        "endTime": null,
+        "from": "Nassau Expressway",
+        "to": "JFK Airport",
+        "length": 400.0,
+        "delay": null,
+        "roadNumbers": ["NY-878"],
+        "timeValidity": "present",
+        "probabilityOfOccurrence": "risk_of",
+        "numberOfReports": "null",
+        "lastReportTime": "2026-10-16T13:58:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.6200, 40.7550]
+      },
+      "properties": {
+        "id": "TT-EXCL-0006",
+        "iconCategory": 6,
+        "magnitudeOfDelay": 2,
+        "events": [
+          {
+            "description": "Congestion on the Long Island Expressway",
+            "code": 101,
+            "iconCategory": 6
+          }
+        ],
+        "startTime": "2026-10-16T13:20:00Z",
+        "endTime": null,
+        "from": "Long Island Expressway",
+        "to": "Queens",
+        "length": 1800.0,
+        "delay": 420,
+        "roadNumbers": ["I-495"],
+        "timeValidity": "present",
+        "probabilityOfOccurrence": "probable",
+        "numberOfReports": 3,
+        "lastReportTime": "2026-10-16T14:00:00Z"
+      }
+    }
+  ]
+}

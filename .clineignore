@@ -1,0 +1,59 @@
+# Files and folders Cline should not read or send to the model.
+# Keep this list focused on noise, generated artefacts, and secrets so that
+# context tokens are spent on source code only.
+# NOTE: .clinerules is intentionally NOT ignored.
+
+# Secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Dependencies / virtualenvs
+node_modules/
+venv/
+.venv/
+env/
+ENV/
+site-packages/
+
+# Python bytecode and build output
+__pycache__/
+*.py[cod]
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Tooling caches and coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.cache/
+
+# Raw API response evidence (can be very large)
+logs/
+raw_responses/
+*.log
+
+# OS / editor / VCS internals
+.DS_Store
+Thumbs.db
+.git/
+.idea/
+.vscode/
+*.swp
+
+# Binary / large media
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.pdf
+*.zip
+*.tar
+*.gz

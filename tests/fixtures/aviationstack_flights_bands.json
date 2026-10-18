@@ -1,0 +1,171 @@
+{
+  "pagination": {
+    "limit": 100,
+    "offset": 0,
+    "count": 4,
+    "total": 4
+  },
+  "data": [
+    {
+      "flight_date": "2025-06-12",
+      "flight_status": "active",
+      "departure": {
+        "airport": "Example Origin International",
+        "timezone": "America/New_York",
+        "iata": "JFK",
+        "terminal": "4",
+        "gate": "B22",
+        "scheduled": "2025-06-12T12:00:00+00:00",
+        "estimated": "2025-06-12T12:45:00+00:00",
+        "actual": "2025-06-12T12:50:00+00:00",
+        "delay": 45
+      },
+      "arrival": {
+        "airport": "Example Destination International",
+        "timezone": "America/Los_Angeles",
+        "iata": "SFO",
+        "terminal": "2",
+        "gate": "A3",
+        "scheduled": "2025-06-12T15:30:00+00:00",
+        "estimated": "2025-06-12T16:15:00+00:00",
+        "actual": null,
+        "delay": 45
+      },
+      "airline": {
+        "name": "Example Airways",
+        "iata": "XX",
+        "icao": "XXX"
+      },
+      "flight": {
+        "number": "100",
+        "iata": "XX100",
+        "icao": "XXX100"
+      },
+      "aircraft": {
+        "registration": "N000XX",
+        "iata": "A320"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2025-06-12",
+      "flight_status": "cancelled",
+      "departure": {
+        "airport": "Example Origin International",
+        "timezone": "America/New_York",
+        "iata": "JFK",
+        "terminal": "5",
+        "gate": null,
+        "scheduled": "2025-06-12T18:00:00+00:00",
+        "estimated": null,
+        "actual": null,
+        "delay": null
+      },
+      "arrival": {
+        "airport": "Example Destination International",
+        "timezone": "America/Los_Angeles",
+        "iata": "SFO",
+        "terminal": null,
+        "gate": null,
+        "scheduled": "2025-06-12T21:30:00+00:00",
+        "estimated": null,
+        "actual": null,
+        "delay": null
+      },
+      "airline": {
+        "name": "Example Airways",
+        "iata": "XX",
+        "icao": "XXX"
+      },
+      "flight": {
+        "number": "200",
+        "iata": "XX200",
+        "icao": "XXX200"
+      },
+      "aircraft": null,
+      "live": null
+    },
+    {
+      "flight_date": "2025-06-12",
+      "flight_status": "landed",
+      "departure": {
+        "airport": "Example Origin International",
+        "timezone": "America/New_York",
+        "iata": "JFK",
+        "terminal": "2",
+        "gate": "C11",
+        "scheduled": "2025-06-12T09:00:00+00:00",
+        "estimated": "2025-06-12T09:00:00+00:00",
+        "actual": "2025-06-12T09:02:00+00:00",
+        "delay": 0
+      },
+      "arrival": {
+        "airport": "Example Destination International",
+        "timezone": "America/Los_Angeles",
+        "iata": "SFO",
+        "terminal": "1",
+        "gate": "B7",
+        "scheduled": "2025-06-12T12:30:00+00:00",
+        "estimated": "2025-06-12T12:35:00+00:00",
+        "actual": "2025-06-12T12:42:00+00:00",
+        "delay": 12
+      },
+      "airline": {
+        "name": "Example Airways",
+        "iata": "XX",
+        "icao": "XXX"
+      },
+      "flight": {
+        "number": "300",
+        "iata": "XX300",
+        "icao": "XXX300"
+      },
+      "aircraft": {
+        "registration": "N300XX",
+        "iata": "B738"
+      },
+      "live": null
+    },
+    {
+      "flight_date": "2025-06-12",
+      "flight_status": "scheduled",
+      "departure": {
+        "airport": "Example Origin International",
+        "timezone": "America/New_York",
+        "iata": "JFK",
+        "terminal": "7",
+        "gate": null,
+        "scheduled": "2025-06-12T22:00:00+00:00",
+        "estimated": "2025-06-12T23:35:00+00:00",
+        "actual": null,
+        "delay": null
+      },
+      "arrival": {
+        "airport": "Example Destination International",
+        "timezone": "America/Los_Angeles",
+        "iata": "SFO",
+        "terminal": null,
+        "gate": null,
+        "scheduled": "2025-06-13T01:30:00+00:00",
+        "estimated": "2025-06-13T03:05:00+00:00",
+        "actual": null,
+        "delay": null
+      },
+      "airline": {
+        "name": "Example Airways",
+        "iata": "XX",
+        "icao": "XXX"
+      },
+      "flight": {
+        "number": "400",
+        "iata": "XX400",
+        "icao": "XXX400"
+      },
+      "aircraft": {
+        "registration": "N400XX",
+        "iata": "A321"
+      },
+      "live": null
+    }
+  ]
+}

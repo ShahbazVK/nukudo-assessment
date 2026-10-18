@@ -1,0 +1,112 @@
+{
+    "@context": [
+        "https://geojson.org/geojson-ld/geojson-context.jsonld",
+        {
+            "@version": "1.1",
+            "wx": "https://api.weather.gov/ontology#",
+            "s": "https://schema.org/",
+            "geo": "http://www.opengis.net/ont/geosparql#",
+            "unit": "http://codes.wmo.int/common/unit/",
+            "@vocab": "https://api.weather.gov/ontology#",
+            "geometry": {
+                "@id": "s:GeoCoordinates",
+                "@type": "geo:wktLiteral"
+            },
+            "city": "s:addressLocality",
+            "state": "s:addressRegion",
+            "distance": {
+                "@id": "s:Distance",
+                "@type": "s:QuantitativeValue"
+            },
+            "bearing": {
+                "@type": "s:QuantitativeValue"
+            },
+            "value": {
+                "@id": "s:value"
+            },
+            "unitCode": {
+                "@id": "s:unitCode",
+                "@type": "@id"
+            },
+            "forecastOffice": {
+                "@type": "@id"
+            },
+            "forecastGridData": {
+                "@type": "@id"
+            },
+            "publicZone": {
+                "@type": "@id"
+            },
+            "county": {
+                "@type": "@id"
+            }
+        }
+    ],
+    "id": "https://api.weather.gov/points/37.6198,-122.3748",
+    "type": "Feature",
+    "geometry": {
+        "type": "Point",
+        "coordinates": [
+            -122.3748,
+            37.6198
+        ]
+    },
+    "properties": {
+        "@id": "https://api.weather.gov/points/37.6198,-122.3748",
+        "@type": "wx:Point",
+        "cwa": "MTR",
+        "type": "land",
+        "forecastOffice": "https://api.weather.gov/offices/MTR",
+        "gridId": "MTR",
+        "gridX": 85,
+        "gridY": 98,
+        "forecast": "https://api.weather.gov/gridpoints/MTR/85,98/forecast",
+        "forecastHourly": "https://api.weather.gov/gridpoints/MTR/85,98/forecast/hourly",
+        "forecastGridData": "https://api.weather.gov/gridpoints/MTR/85,98",
+        "observationStations": "https://api.weather.gov/gridpoints/MTR/85,98/stations",
+        "relativeLocation": {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.3633425,
+                    37.5899515
+                ]
+            },
+            "properties": {
+                "city": "Burlingame",
+                "state": "CA",
+                "distance": {
+                    "unitCode": "wmoUnit:m",
+                    "value": 1435.2391944582
+                },
+                "bearing": {
+                    "unitCode": "wmoUnit:degree_(angle)",
+                    "value": 343
+                }
+            }
+        },
+        "forecastZone": "https://api.weather.gov/zones/forecast/CAZ508",
+        "county": "https://api.weather.gov/zones/county/CAC081",
+        "fireWeatherZone": "https://api.weather.gov/zones/fire/CAZ508",
+        "timeZone": "America/Los_Angeles",
+        "radarStation": "KMUX",
+        "astronomicalData": {
+            "sunrise": "2026-10-16T07:19:01-07:00",
+            "sunset": "2026-10-16T18:30:56-07:00",
+            "transit": "2026-10-16T12:54:58-07:00",
+            "civilTwilightBegin": "2026-10-16T06:52:41-07:00",
+            "civilTwilightEnd": "2026-10-16T18:57:15-07:00",
+            "nauticalTwilightBegin": "2026-10-16T06:22:17-07:00",
+            "nauticalTwilightEnd": "2026-10-16T19:27:40-07:00",
+            "astronomicalTwilightBegin": "2026-10-16T05:51:58-07:00",
+            "astronomicalTwilightEnd": "2026-10-16T19:57:58-07:00"
+        },
+        "nwr": {
+            "transmitter": "KHB49",
+            "sameCode": "006081",
+            "areaBroadcast": "https://api.weather.gov/radio/KHB49/broadcast",
+            "pointBroadcast": "https://api.weather.gov/points/37.6198,-122.3748/radio"
+        }
+    }
+}

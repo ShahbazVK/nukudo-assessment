@@ -1,0 +1,6 @@
+{
+  "detailedError": {
+    "code": "Unauthorized",
+    "message": "You are missing valid authentication credentials"
+  }
+}

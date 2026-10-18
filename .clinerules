@@ -1,0 +1,91 @@
+# Travel Disruption Assessor - Cline Rules
+
+These rules apply to every file and every change in this repository. Follow them
+strictly when generating, editing, or reviewing code.
+
+## 1. Type hints on every function signature
+
+- Every function and method must annotate all parameters and the return type.
+- Add `from __future__ import annotations` at the top of any module that uses
+  built-in generics (`list[str]`, `dict[str, Any]`, `str | None`) so the code
+  stays runnable on Python 3.9 (the local interpreter).
+- Prefer precise types over `Any`; use `Any` only for genuinely opaque payloads
+  (e.g. a raw unparsed API response) and say why in a comment.
+
+## 2. Every external API call must handle failure
+
+- Set an explicit timeout on every outbound HTTP request (no unbounded calls).
+- Check the HTTP status code explicitly and treat any non-2xx as a failure.
+- Guard against malformed / unexpected payloads: validate the shape (or required
+  keys) before reading it, and assume fields can be missing, `None`, or the wrong
+  type. Never let a `KeyError` / `TypeError` escape from a data source module.
+- Catch transport errors (`httpx.TimeoutException`, `httpx.HTTPError`), and rate
+  limiting / quota responses, and convert them into the module's error state.
+
+## 3. No mocked data - ever
+
+- Never fabricate, hardcode, sample, or interpolate a response that looks like
+  real data. Not in data sources, not in the AI layer, not in tests, not in the
+  frontend, not in demos.
+- If a source fails, return an explicit error state naming the source and the
+  reason. A missing signal is reported as missing, never filled in.
+- Partial results are allowed only if the output clearly marks which sources are
+  missing and which risks therefore have weaker evidence.
+
+## 4. One standardized contract per data source module
+
+- Each module in `data_sources/` exposes exactly one public entry point:
+
+  ```python
+  def fetch_signals(location: Location, date: datetime.date) -> NormalizedSignals:
+      ...
+  ```
+
+- It returns a single normalized dict (the shared envelope), never a raw vendor
+  payload, and never a list of ad-hoc shapes.
+- Additional helpers must be private (leading underscore). No second public
+  `fetch_*` function.
+
+## 5. Log raw API responses before processing them
+
+- Persist the raw, unmodified response (status, headers, body, request URL,
+  timestamp, latency) *before* any parsing or transformation, so every claim in
+  the final assessment can be traced back to its source.
+- Raw logs are the evidence layer. Do not overwrite, trim fields, or
+  re-serialize raw payloads into a lossy form.
+- Logging must be failure-safe: if logging fails, surface that as an error rather
+  than silently producing an untraceable result.
+
+## 6. Keep Streamlit UI logic separate from data fetching logic
+
+- Streamlit code (`frontend/`) only renders state and collects input. It must not
+  call third-party APIs, parse vendor payloads, or contain business rules.
+- All backend communication goes through `frontend/api_client.py` (or the
+  FastAPI backend) behind typed functions.
+- Backend modules must never import Streamlit.
+
+## 7. Never hardcode API keys
+
+- All secrets are read from environment variables via `config.py` (which loads
+  `.env` with `python-dotenv` for local development).
+- No key, token, or secret literal may appear in source, tests, fixtures, logs,
+  error messages, or committed files. `.env` is git-ignored; `.env.example`
+  documents the variables with empty values.
+- If a required credential is missing, fail with an explicit error state that
+  names the missing environment variable. Do not substitute a default key.
+
+## 8. Never print secret values
+
+- Never run a shell command whose output contains an environment variable's
+  value - including `cat .env`, `tail .env`, `head .env`, `printenv`, `env`, and
+  any variant (pipes, `grep` without `-c`/`-l`, redirection into a file that is
+  then displayed).
+- If a value needs to be verified, read it programmatically into a variable and
+  assert its *properties* - length, prefix, non-empty, matches one of the known
+  placeholder values - never its content. `grep -c '^KEY=..*' .env` is the
+  maximum that may be printed; `grep -c '^KEY=<expected>$'` is acceptable only
+  when the expected value is a documented placeholder, not a live secret.
+- This rule exists because a prior turn ran `tail -4 .env` and leaked a live API
+  key into the terminal transcript. That key had to be treated as burned.
+- The same applies to logs, fixtures and error messages: tests must assert that
+  no secret value appears anywhere, not print it to prove the assertion.

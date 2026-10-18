@@ -1,0 +1,725 @@
+{
+  "@context": [
+    "https://geojson.org/geojson-ld/geojson-context.jsonld",
+    {
+      "@version": "1.1",
+      "wx": "https://api.weather.gov/ontology#",
+      "@vocab": "https://api.weather.gov/ontology#"
+    }
+  ],
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77f73831b2a718d6cc0b8bc60976aa461ac36e9f.001.1",
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77f73831b2a718d6cc0b8bc60976aa461ac36e9f.001.1",
+        "@type": "wx:Alert",
+        "id": "urn:oid:2.49.0.1.840.0.77f73831b2a718d6cc0b8bc60976aa461ac36e9f.001.1",
+        "areaDesc": "Guadalupe Mountains of Eddy County; Guadalupe Mountains Above 7000 Feet; Guadalupe and Delaware Mountains",
+        "geocode": {
+          "SAME": [
+            "035015",
+            "048109"
+          ],
+          "UGC": [
+            "NMZ027",
+            "TXZ270",
+            "TXZ271"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/forecast/NMZ027",
+          "https://api.weather.gov/zones/forecast/TXZ270",
+          "https://api.weather.gov/zones/forecast/TXZ271"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f1f338366d1a86b2386cd277e4b43ba2843f5807.001.3",
+            "identifier": "urn:oid:2.49.0.1.840.0.f1f338366d1a86b2386cd277e4b43ba2843f5807.001.3",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2026-10-16T10:07:00-06:00"
+          },
+          {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.66fe6abc12a366f035aabf8faf268bd1c1480abe.001.1",
+            "identifier": "urn:oid:2.49.0.1.840.0.66fe6abc12a366f035aabf8faf268bd1c1480abe.001.1",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2026-10-15T10:30:00-06:00"
+          },
+          {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.47b7dfc2b2dc260ffc5fafe0a3c3f759377f9a72.001.1",
+            "identifier": "urn:oid:2.49.0.1.840.0.47b7dfc2b2dc260ffc5fafe0a3c3f759377f9a72.001.1",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2026-10-15T10:48:00-06:00"
+          },
+          {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5b79c7cb4beda4db60a5f0b287a156d4b5f1c6ae.001.1",
+            "identifier": "urn:oid:2.49.0.1.840.0.5b79c7cb4beda4db60a5f0b287a156d4b5f1c6ae.001.1",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2026-10-15T11:00:00-06:00"
+          },
+          {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3546cff8987ef1855727b74989d5223d2d07d7d5.001.1",
+            "identifier": "urn:oid:2.49.0.1.840.0.3546cff8987ef1855727b74989d5223d2d07d7d5.001.1",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2026-10-15T11:03:00-06:00"
+          }
+        ],
+        "sent": "2026-10-16T18:40:00-06:00",
+        "effective": "2026-10-16T18:40:00-06:00",
+        "onset": "2026-10-16T18:40:00-06:00",
+        "expires": "2026-10-17T09:00:00-06:00",
+        "ends": "2026-10-17T00:00:00-06:00",
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "High Wind Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Midland/Odessa TX",
+        "headline": "High Wind Warning issued October 16 at 6:40PM MDT until October 17 at 12:00AM MDT by NWS Midland/Odessa TX",
+        "description": "* WHAT...For the High Wind Warning, especially Guadalupe Pass,\nnortheast winds 30 to 40 mph with gusts up to 60 mph. For the\nFreeze Warning, sub-freezing temperatures as low as 28 expected.\n\n* WHERE...Guadalupe Mountains of west Texas and Southeast New Mexico.\n\n* WHEN...For the High Wind Warning, until midnight MDT /1 AM CDT/\ntonight. For the Freeze Warning, from 3 AM MDT /4 AM CDT/ to 9 AM\nMDT /10 AM CDT/ Saturday.\n\n* IMPACTS...Travel will be difficult, especially for high profile\nvehicles like campers, vans, and tractor trailers. Frost and freeze\nconditions could kill crops, other sensitive vegetation and\npossibly damage unprotected outdoor plumbing.",
+        "instruction": "Winds will be particularly hazardous at higher elevations where the\nstrongest winds are likely to occur. Be especially careful driving in\nthese mountainous areas. People driving high-profile vehicles should\nstrongly consider postponing travel in these areas until the winds\nsubside.\n\nDelay travel through Guadalupe Pass or find another route, if\npossible.\n\nTake steps now to protect tender plants from the cold.",
+        "response": "Prepare",
+        "note": null,
+        "parameters": {
+          "AWIPSidentifier": [
+            "NPWMAF"
+          ],
+          "WMOidentifier": [
+            "WWUS74 KMAF 170040"
+          ],
+          "NWSheadline": [
+            "HIGH WIND WARNING REMAINS IN EFFECT UNTIL MIDNIGHT MDT /1 AM CDT/ TONIGHT , ESPECIALLY GUADALUPE PASS... ...FREEZE WARNING REMAINS IN EFFECT FROM 3 AM MDT /4 AM CDT/ TO 9 AM MDT /10 AM CDT/ SATURDAY"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM",
+            "CMAS"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "VTEC": [
+            "/O.CON.KMAF.HW.W.0022.000000T0000Z-261017T0600Z/"
+          ],
+          "eventEndingTime": [
+            "2026-10-17T00:00:00-06:00"
+          ],
+          "expiredReferences": [
+            "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.cc0157370501feefe619dc02dc99f9f945356a53.001.2,2026-10-15T23:56:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.63c8c516383fd10b27570c6434e91f4463b30615.001.1,2026-10-15T22:43:00-06:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.bf1f86927c1afcbabc01816ed1e0e31e49491837.001.2,2026-10-15T02:24:00-06:00"
+          ]
+        },
+        "scope": "Public",
+        "code": "IPAWSv1.0",
+        "language": "en-US",
+        "web": "http://www.weather.gov",
+        "eventCode": {
+          "SAME": [
+            "HWW"
+          ],
+          "NationalWeatherService": [
+            "HWW"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.aa9ca58356d55853dc2699df0eb06492d61aaf3e.002.1",
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.aa9ca58356d55853dc2699df0eb06492d61aaf3e.002.1",
+        "@type": "wx:Alert",
+        "id": "urn:oid:2.49.0.1.840.0.aa9ca58356d55853dc2699df0eb06492d61aaf3e.002.1",
+        "areaDesc": "Bee; Goliad; Victoria; Jim Wells; Inland Kleberg; Inland Nueces; Inland San Patricio; Coastal Aransas; Inland Refugio; Inland Calhoun; Coastal Kleberg; Coastal Nueces; Coastal San Patricio; Coastal Refugio; Coastal Calhoun",
+        "geocode": {
+          "SAME": [
+            "048025",
+            "048175",
+            "048469",
+            "048249",
+            "048273",
+            "048355",
+            "048409",
+            "048007",
+            "048391",
+            "048057"
+          ],
+          "UGC": [
+            "TXZ232",
+            "TXZ233",
+            "TXZ234",
+            "TXZ241",
+            "TXZ242",
+            "TXZ243",
+            "TXZ244",
+            "TXZ245",
+            "TXZ246",
+            "TXZ247",
+            "TXZ342",
+            "TXZ343",
+            "TXZ344",
+            "TXZ346",
+            "TXZ347"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/forecast/TXZ232",
+          "https://api.weather.gov/zones/forecast/TXZ233",
+          "https://api.weather.gov/zones/forecast/TXZ234",
+          "https://api.weather.gov/zones/forecast/TXZ241",
+          "https://api.weather.gov/zones/forecast/TXZ242",
+          "https://api.weather.gov/zones/forecast/TXZ243",
+          "https://api.weather.gov/zones/forecast/TXZ244",
+          "https://api.weather.gov/zones/forecast/TXZ245",
+          "https://api.weather.gov/zones/forecast/TXZ246",
+          "https://api.weather.gov/zones/forecast/TXZ247",
+          "https://api.weather.gov/zones/forecast/TXZ342",
+          "https://api.weather.gov/zones/forecast/TXZ343",
+          "https://api.weather.gov/zones/forecast/TXZ344",
+          "https://api.weather.gov/zones/forecast/TXZ346",
+          "https://api.weather.gov/zones/forecast/TXZ347"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8ed313dade5b3d1a770a39f53b1a62d5445b562d.002.1",
+            "identifier": "urn:oid:2.49.0.1.840.0.8ed313dade5b3d1a770a39f53b1a62d5445b562d.002.1",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2026-10-15T20:38:00-05:00"
+          }
+        ],
+        "sent": "2026-10-16T18:41:00-05:00",
+        "effective": "2026-10-16T18:41:00-05:00",
+        "onset": "2026-10-16T18:41:00-05:00",
+        "expires": "2026-10-17T01:00:00-05:00",
+        "ends": "2026-10-17T01:00:00-05:00",
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Moderate",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "Wind Advisory",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Corpus Christi TX",
+        "headline": "Wind Advisory issued October 16 at 6:41PM CDT until October 17 at 1:00AM CDT by NWS Corpus Christi TX",
+        "description": "* WHAT...North winds 20 to 30 mph with gusts up to 40 mph.\n\n* WHERE...Bee, Coastal Aransas, Coastal Calhoun, Coastal Kleberg,\nCoastal Nueces, Coastal Refugio, Coastal San Patricio, Goliad,\nInland Calhoun, Inland Kleberg, Inland Nueces, Inland Refugio,\nInland San Patricio, Jim Wells, and Victoria Counties.\n\n* WHEN...Until 1 AM CDT Saturday.\n\n* IMPACTS...Gusty winds will blow around unsecured objects. Tree\nlimbs could be blown down and a few power outages may result.",
+        "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles. Use extra caution.",
+        "response": "Execute",
+        "note": null,
+        "parameters": {
+          "AWIPSidentifier": [
+            "NPWCRP"
+          ],
+          "WMOidentifier": [
+            "WWUS74 KCRP 162341"
+          ],
+          "NWSheadline": [
+            "WIND ADVISORY REMAINS IN EFFECT UNTIL 1 AM CDT SATURDAY"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM",
+            "CMAS"
+          ],
+          "VTEC": [
+            "/O.CON.KCRP.WI.Y.0007.000000T0000Z-261017T0600Z/"
+          ],
+          "eventEndingTime": [
+            "2026-10-17T01:00:00-05:00"
+          ],
+          "expiredReferences": [
+            "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7d8ee461804034f0518ad045d721891c55b25ffd.002.1,2026-10-15T11:03:00-05:00"
+          ]
+        },
+        "scope": "Public",
+        "code": "IPAWSv1.0",
+        "language": "en-US",
+        "web": "http://www.weather.gov",
+        "eventCode": {
+          "SAME": [
+            "NWS"
+          ],
+          "NationalWeatherService": [
+            "WIY"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.94d18758e5a4d8cd361e1c02753601085061e565.001.1",
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.94d18758e5a4d8cd361e1c02753601085061e565.001.1",
+        "@type": "wx:Alert",
+        "id": "urn:oid:2.49.0.1.840.0.94d18758e5a4d8cd361e1c02753601085061e565.001.1",
+        "areaDesc": "Kenedy Island; Willacy Island; Cameron Island",
+        "geocode": {
+          "SAME": [
+            "048261",
+            "048489",
+            "048061"
+          ],
+          "UGC": [
+            "TXZ451",
+            "TXZ454",
+            "TXZ455"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/forecast/TXZ451",
+          "https://api.weather.gov/zones/forecast/TXZ454",
+          "https://api.weather.gov/zones/forecast/TXZ455"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fd3c21272b94d4cca60c6ace65c73ec0b95fb83d.001.1",
+            "identifier": "urn:oid:2.49.0.1.840.0.fd3c21272b94d4cca60c6ace65c73ec0b95fb83d.001.1",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2026-10-16T02:07:00-05:00"
+          }
+        ],
+        "sent": "2026-10-16T17:47:00-05:00",
+        "effective": "2026-10-16T17:47:00-05:00",
+        "onset": "2026-10-16T17:47:00-05:00",
+        "expires": "2026-10-18T01:00:00-05:00",
+        "ends": "2026-10-18T07:00:00-05:00",
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Minor",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "Coastal Flood Advisory",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Brownsville TX",
+        "headline": "Coastal Flood Advisory issued October 16 at 5:47PM CDT until October 18 at 7:00AM CDT by NWS Brownsville TX",
+        "description": "* WHAT...For the Coastal Flood Advisory, minor coastal flooding.\nFor the High Surf Advisory, large breaking waves of 4 to 13\nfeet in the surf zone. For the High Rip Current Risk,\ndangerous rip currents.\n\n* WHERE...Kenedy Island, Willacy Island and Cameron Island\nCounties.\n\n* WHEN...For the Coastal Flood Advisory, until 7 AM CDT Sunday.\nFor the High Rip Current Risk, through Sunday morning.\n\n* IMPACTS...Nuisance flooding is expected, with water reaching\nor pushing into the dunes on South Padre Island. Vehicles,\nexcept those with four wheel drive and high wheel bases, will\nbe unable to be driven on the beach. This includes locations\nnorth of Public Beach Access #3. Minor to moderate beach\nerosion is expected. Dangerous swimming and surfing conditions\nand localized beach erosion. Rip currents can sweep even the\nbest swimmers away from shore into deeper water.",
+        "instruction": "If travel is required, allow extra time as some roads may be\nclosed. Do not drive around barricades or through water of\nunknown depth. Take the necessary actions to protect flood-prone\nproperty.\n\nInexperienced swimmers should remain out of the water due to\ndangerous surf conditions.\n\nSwim near a lifeguard. If caught in a rip current, relax and\nfloat. Don't swim against the current. If able, swim in a\ndirection following the shoreline. If unable to escape, face the\nshore and call or wave for help.",
+        "response": "Monitor",
+        "note": null,
+        "parameters": {
+          "AWIPSidentifier": [
+            "CFWBRO"
+          ],
+          "WMOidentifier": [
+            "WHUS44 KBRO 162247"
+          ],
+          "NWSheadline": [
+            "COASTAL FLOOD ADVISORY REMAINS IN EFFECT UNTIL 7 AM CDT SUNDAY... ...HIGH SURF ADVISORY REMAINS IN EFFECT UNTIL 7 AM CDT SUNDAY... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH SUNDAY MORNING"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM",
+            "CMAS"
+          ],
+          "VTEC": [
+            "/O.CON.KBRO.CF.Y.0003.000000T0000Z-261018T1200Z/"
+          ],
+          "eventEndingTime": [
+            "2026-10-18T07:00:00-05:00"
+          ],
+          "expiredReferences": [
+            "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.376647c6720d7fbee8506ad949f58305a4a7e41b.001.1,2026-10-15T11:20:00-05:00"
+          ]
+        },
+        "scope": "Public",
+        "code": "IPAWSv1.0",
+        "language": "en-US",
+        "web": "http://www.weather.gov",
+        "eventCode": {
+          "SAME": [
+            "NWS"
+          ],
+          "NationalWeatherService": [
+            "CFY"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6f4394b6a249014254b09a983a5bb047d3247501.001.1",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -99.23,
+              33.92
+            ],
+            [
+              -99.3,
+              33.97
+            ],
+            [
+              -99.09,
+              34.02
+            ],
+            [
+              -98.82,
+              33.92
+            ],
+            [
+              -98.81,
+              33.86
+            ],
+            [
+              -99.11,
+              33.96
+            ],
+            [
+              -99.23,
+              33.92
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6f4394b6a249014254b09a983a5bb047d3247501.001.1",
+        "@type": "wx:Alert",
+        "id": "urn:oid:2.49.0.1.840.0.6f4394b6a249014254b09a983a5bb047d3247501.001.1",
+        "areaDesc": "Wichita, TX; Wilbarger, TX",
+        "geocode": {
+          "SAME": [
+            "048485",
+            "048487"
+          ],
+          "UGC": [
+            "TXC485",
+            "TXC487"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC485",
+          "https://api.weather.gov/zones/county/TXC487"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.195da22aeb3ea282006c39cf4e69c92c3ce524dd.001.1",
+            "identifier": "urn:oid:2.49.0.1.840.0.195da22aeb3ea282006c39cf4e69c92c3ce524dd.001.1",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2026-10-16T03:02:00-05:00"
+          },
+          {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.77eb796d4c952b612d39a82f7b083595edafef48.001.1",
+            "identifier": "urn:oid:2.49.0.1.840.0.77eb796d4c952b612d39a82f7b083595edafef48.001.1",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2026-10-16T09:04:00-05:00"
+          }
+        ],
+        "sent": "2026-10-16T14:25:00-05:00",
+        "effective": "2026-10-16T14:25:00-05:00",
+        "onset": "2026-10-18T01:00:00-05:00",
+        "expires": "2026-10-17T02:30:00-05:00",
+        "ends": "2026-10-20T03:15:00-05:00",
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Flood Warning",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Norman OK",
+        "headline": "Flood Warning issued October 16 at 2:25PM CDT until October 20 at 3:15AM CDT by NWS Norman OK",
+        "description": "...The Flood Warning is extended for the following rivers in Texas...\n\nBeaver Creek near Electra affecting Wilbarger and Wichita Counties.\n\n* WHAT...Minor flooding is forecast.\n\n* WHERE...Beaver Creek near Electra.\n\n* WHEN...From late Saturday night to late Monday night.\n\n* IMPACTS...At 26.0 feet, Flood levels up to 2 feet in depth cover\nfarm and range lands... and may inundate some oil and gas\nfacilities... along and near the creek in southern Wilbarger County\nand southwestern Wichita County.\n\n* ADDITIONAL DETAILS...\n- At 2:00 PM CDT Friday the stage was 23.5 feet.\n- Bankfull stage is 24.0 feet.\n- Forecast...The river is expected to rise above flood stage early\nSunday morning to a crest of 25.7 feet Sunday evening. It will\nthen fall below flood stage late Monday evening.\n- Flood stage is 24.0 feet.\n- http://www.weather.gov/safety/flood",
+        "instruction": "Turn around, don't drown when encountering flooded roads. Most flood\ndeaths occur in vehicles.\n\nAdditional information is available at www.weather.gov.\n\nThe next statement will be issued late tonight at 230 AM CDT.",
+        "response": "Avoid",
+        "note": null,
+        "parameters": {
+          "AWIPSidentifier": [
+            "FLSOUN"
+          ],
+          "WMOidentifier": [
+            "WGUS84 KOUN 161925"
+          ],
+          "NWSheadline": [
+            "FLOOD WARNING NOW IN EFFECT FROM LATE SATURDAY NIGHT TO LATE MONDAY NIGHT"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM",
+            "CMAS"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "VTEC": [
+            "/O.EXT.KOUN.FL.W.0019.261018T0600Z-261020T0815Z/"
+          ],
+          "eventEndingTime": [
+            "2026-10-20T03:15:00-05:00"
+          ],
+          "expiredReferences": [
+            "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.a0fc2557fbd9fe72fb6789222b102ec370c9ed84.001.1,2026-10-15T20:38:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.07c637825b0de8ac2a2e3ef3041e300a7db0f99e.001.1,2026-10-15T14:29:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.954d913b8ae08ed3af7e112296f9aad2f5c6895e.001.1,2026-10-15T08:42:00-05:00"
+          ]
+        },
+        "scope": "Public",
+        "code": "IPAWSv1.0",
+        "language": "en-US",
+        "web": "http://www.weather.gov",
+        "eventCode": {
+          "SAME": [
+            "FLS"
+          ],
+          "NationalWeatherService": [
+            "FLW"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6a6b86548c79464064379260e0e4b2d67802b873.001.1",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -98.95,
+              34.14
+            ],
+            [
+              -98.95,
+              34.3
+            ],
+            [
+              -98.54,
+              34.18
+            ],
+            [
+              -98.05,
+              34.19
+            ],
+            [
+              -98.15,
+              34.06
+            ],
+            [
+              -98.59,
+              34.02
+            ],
+            [
+              -98.95,
+              34.14
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6a6b86548c79464064379260e0e4b2d67802b873.001.1",
+        "@type": "wx:Alert",
+        "id": "urn:oid:2.49.0.1.840.0.6a6b86548c79464064379260e0e4b2d67802b873.001.1",
+        "areaDesc": "Tillman; Cotton; Jefferson; Wichita; Clay",
+        "geocode": {
+          "SAME": [
+            "040141",
+            "040033",
+            "040067",
+            "048485",
+            "048077"
+          ],
+          "UGC": [
+            "OKZ037",
+            "OKZ044",
+            "OKZ045",
+            "TXZ086",
+            "TXZ090"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/forecast/OKZ037",
+          "https://api.weather.gov/zones/forecast/OKZ044",
+          "https://api.weather.gov/zones/forecast/OKZ045",
+          "https://api.weather.gov/zones/forecast/TXZ086",
+          "https://api.weather.gov/zones/forecast/TXZ090"
+        ],
+        "references": [
+          {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7e9c8a555cd3eb0357eb7fe26d25db8298efcef7.001.1",
+            "identifier": "urn:oid:2.49.0.1.840.0.7e9c8a555cd3eb0357eb7fe26d25db8298efcef7.001.1",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "sent": "2026-10-16T09:02:00-05:00"
+          }
+        ],
+        "sent": "2026-10-16T14:24:00-05:00",
+        "effective": "2026-10-16T14:24:00-05:00",
+        "onset": "2026-10-17T22:00:00-05:00",
+        "expires": "2026-10-17T04:30:00-05:00",
+        "ends": "2026-10-18T13:00:00-05:00",
+        "status": "Actual",
+        "messageType": "Update",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Possible",
+        "urgency": "Future",
+        "event": "Flood Watch",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Norman OK",
+        "headline": "Flood Watch issued October 16 at 2:24PM CDT until October 18 at 1:00PM CDT by NWS Norman OK",
+        "description": "...The Flood Watch continues for the following rivers in Oklahoma...\nTexas...\n\nRed River near Burkburnett affecting Jefferson, Wichita, Clay,\nCotton and Tillman Counties.\n\n* WHAT...Flooding is possible.\n\n* WHERE...Red River near Burkburnett.\n\n* WHEN...From Saturday evening to Sunday afternoon.\n\n* ADDITIONAL DETAILS...\n- At 1:30 PM CDT Friday the stage was 7.0 feet.\n- Forecast...Flood stage may be reached late tomorrow evening.\n- Flood stage is 9.0 feet.\n- http://www.weather.gov/safety/flood",
+        "instruction": "If you are in the watch area, remain alert to possible flooding.\n\nAdditional information is available at www.weather.gov.\n\nThe next statement will be issued late tonight at 430 AM CDT.",
+        "response": "Prepare",
+        "note": null,
+        "parameters": {
+          "AWIPSidentifier": [
+            "FFAOUN"
+          ],
+          "WMOidentifier": [
+            "WGUS64 KOUN 161924"
+          ],
+          "NWSheadline": [
+            "FLOOD WATCH REMAINS IN EFFECT FROM SATURDAY EVENING TO SUNDAY AFTERNOON"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM",
+            "CMAS"
+          ],
+          "EAS-ORG": [
+            "WXR"
+          ],
+          "VTEC": [
+            "/O.CON.KOUN.FL.A.0003.261018T0300Z-261018T1800Z/"
+          ],
+          "eventEndingTime": [
+            "2026-10-18T13:00:00-05:00"
+          ]
+        },
+        "scope": "Public",
+        "code": "IPAWSv1.0",
+        "language": "en-US",
+        "web": "http://www.weather.gov",
+        "eventCode": {
+          "SAME": [
+            "FLA"
+          ],
+          "NationalWeatherService": [
+            "FLA"
+          ]
+        }
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9d120707fb1251c4bb3b03a5b98c4a22630630ef.001.1",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -99.15,
+              33.4
+            ],
+            [
+              -99.4,
+              33.54
+            ],
+            [
+              -99.98,
+              33.4
+            ],
+            [
+              -99.98,
+              33.49
+            ],
+            [
+              -99.36,
+              33.66
+            ],
+            [
+              -98.97,
+              33.4
+            ],
+            [
+              -99.15,
+              33.4
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9d120707fb1251c4bb3b03a5b98c4a22630630ef.001.1",
+        "@type": "wx:Alert",
+        "id": "urn:oid:2.49.0.1.840.0.9d120707fb1251c4bb3b03a5b98c4a22630630ef.001.1",
+        "areaDesc": "Baylor, TX; Knox, TX",
+        "geocode": {
+          "SAME": [
+            "048023",
+            "048275"
+          ],
+          "UGC": [
+            "TXC023",
+            "TXC275"
+          ]
+        },
+        "affectedZones": [
+          "https://api.weather.gov/zones/county/TXC023",
+          "https://api.weather.gov/zones/county/TXC275"
+        ],
+        "references": [],
+        "sent": "2026-10-16T14:05:00-05:00",
+        "effective": "2026-10-16T14:05:00-05:00",
+        "onset": "2026-10-16T14:05:00-05:00",
+        "expires": "2026-10-17T02:15:00-05:00",
+        "ends": "2026-10-17T07:00:00-05:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Minor",
+        "certainty": "Observed",
+        "urgency": "Expected",
+        "event": "Flood Advisory",
+        "sender": "w-nws.webmaster@noaa.gov",
+        "senderName": "NWS Norman OK",
+        "headline": "Flood Advisory issued October 16 at 2:05PM CDT until October 17 at 7:00AM CDT by NWS Norman OK",
+        "description": "...The National Weather Service in Norman has issued a Flood Advisory\nfor the following rivers in Texas...\n\nBrazos River at Seymour affecting Knox and Baylor Counties.\n\n* WHAT...Flooding caused by excessive rainfall is expected.\n\n* WHERE...Brazos River at Seymour.\n\n* WHEN...From this afternoon to Saturday morning.\n\n* IMPACTS...At 10.0 feet, The river remains within its banks in\nsouthern Knox and southern Baylor counties.\n\n* ADDITIONAL DETAILS...\n- At 1:45 PM CDT Friday the stage was 10.0 feet.\n- Bankfull stage is 12.0 feet.\n- Forecast...The river is expected to rise to a crest of 10.1 feet\nthis evening.\n- Action stage is 10.0 feet.\n- Flood stage is 12.0 feet.\n- http://www.weather.gov/safety/flood",
+        "instruction": "If you encounter a flooded roadway, turn around and find an\nalternative route.\n\nAdditional information is available at www.weather.gov.\n\nThe next statement will be issued late tonight at 215 AM CDT.",
+        "response": "Avoid",
+        "note": null,
+        "parameters": {
+          "AWIPSidentifier": [
+            "FLSOUN"
+          ],
+          "WMOidentifier": [
+            "WGUS84 KOUN 161905"
+          ],
+          "NWSheadline": [
+            "FLOOD ADVISORY IN EFFECT FROM THIS AFTERNOON TO SATURDAY MORNING"
+          ],
+          "BLOCKCHANNEL": [
+            "EAS",
+            "NWEM",
+            "CMAS"
+          ],
+          "VTEC": [
+            "/O.NEW.KOUN.FL.Y.0039.261016T1905Z-261017T1200Z/"
+          ],
+          "eventEndingTime": [
+            "2026-10-17T07:00:00-05:00"
+          ]
+        },
+        "scope": "Public",
+        "code": "IPAWSv1.0",
+        "language": "en-US",
+        "web": "http://www.weather.gov",
+        "eventCode": {
+          "SAME": [
+            "NWS"
+          ],
+          "NationalWeatherService": [
+            "FLY"
+          ]
+        }
+      }
+    }
+  ],
+  "title": "Current watches, warnings, and advisories for Texas",
+  "updated": "2026-10-17T00:47:05+00:00"
+}

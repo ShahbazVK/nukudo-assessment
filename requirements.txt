@@ -1,0 +1,20 @@
+# Travel Disruption Assessor - initial dependencies (setup scaffold only).
+# Add nothing else until the corresponding integration prompt lands.
+# Local interpreter: Python 3.9.6
+
+fastapi
+uvicorn
+streamlit
+httpx
+python-dotenv
+pydantic
+
+# Testing. No HTTP mocking library: the contract tests in test_base_*.py call real
+# endpoints because .clinerules rule 3 forbids fabricated responses anywhere,
+# including tests. The parsing tests in test_nws.py fake only the transport seam
+# (monkeypatch on base.get_json) and replay payloads captured from the real API,
+# which are stored verbatim in tests/fixtures/. test_aviationstack.py does the same,
+# but its flight-record fixtures are labelled [SCHEMA-DERIVED] in
+# tests/fixtures/README.md (no API key was available to capture them); the live tests
+# in test_aviationstack_live.py exercise the real API, including its key-error path.
+pytest
